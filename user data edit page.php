@@ -24,21 +24,6 @@
 </head>
 <body class="bg-gradient-to-r from-green-500 to-teal-500 min-h-screen flex flex-col items-center justify-center">
 
-    <header class="bg-green-800 text-white p-4 w-full">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-lg font-bold">Edit Student Data</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="home.php" class="hover:bg-green-700 p-2 rounded">Home</a></li>
-                    <li><a href="user data.php" class="hover:bg-green-700 p-2 rounded">Student Data</a></li>
-                    <li><a href="registration.php" class="hover:bg-green-700 p-2 rounded">Registration</a></li>
-                    <li><a href="read tag.php" class="hover:bg-green-700 p-2 rounded">Read Tag ID</a></li>
-                    <li><a href="teacher_management.php" class="hover:bg-green-700 p-2 rounded">Manage Teachers</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <div class="w-full max-w-xs mt-6">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="student_update.php" method="post">
             <div class="mb-4">
