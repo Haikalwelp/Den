@@ -43,10 +43,8 @@
                 return;
             } else {
                 if (window.XMLHttpRequest) {
-                    // code for IE7+, Firefox, Chrome, Opera, Safari
                     xmlhttp = new XMLHttpRequest();
                 } else {
-                    // code for IE6, IE5
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
                 xmlhttp.onreadystatechange = function() {
@@ -85,7 +83,7 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-4 mt-8">
+    <div class="container mx-auto px-4 mt-8 flex-grow">
         <h3 class="text-2xl font-semibold text-center text-gray-800 mb-2" id="blink">Please Scan Tag to Record Attendance</h3>
         <p id="getUID" hidden></p>
 
@@ -103,7 +101,7 @@
         </div>
     </div>
 
-    <footer class="bg-green-800 text-white p-4 text-center">
+    <footer class="bg-green-800 text-white p-4 text-center mt-auto">
         © 2024 Denz Attendance Tracking System
     </footer>
 
