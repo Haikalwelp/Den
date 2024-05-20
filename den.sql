@@ -41,13 +41,37 @@ CREATE TABLE IF NOT EXISTS `teachers` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(500) DEFAULT NULL,
   `password` varchar(500) DEFAULT NULL,
+  `fullname` varchar(555) DEFAULT NULL,
+  `phone` varchar(14) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table den.teachers: ~2 rows (approximately)
-INSERT INTO `teachers` (`id`, `username`, `password`) VALUES
-	(3, 'ad', '123'),
-	(4, 'add', 'add');
+INSERT INTO `teachers` (`id`, `username`, `password`, `fullname`, `phone`) VALUES
+	(6, 'farizoza', 'hilmigay', 'Hilmi Faris', '113231113'),
+	(7, 'Haikalwelp', 'Spidey12!', 'Haikal Iskandar', '01139979189');
+
+-- Dumping structure for table den.user
+CREATE TABLE IF NOT EXISTS `user` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  `user_password` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  `user_email` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=137 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
+-- Dumping data for table den.user: ~10 rows (approximately)
+INSERT INTO `user` (`user_id`, `user_name`, `user_password`, `user_email`) VALUES
+	(9, 'ulwan', '$2y$10$w52pLglmFfIG6vw6kPBgBuoFirQWnp0bqElSf3ATWbWoIXUNyIqVm', 'ulwan.muzammil98@gmail.com'),
+	(127, 'sherly', '$2y$10$jAfsVzBqC4srChd77G.SPOC/mD7UUC0ZkG8Fzg2MaVo5LYnWCzl7q', 'ali@gmail.com'),
+	(128, 'sherly', '$2y$10$20VEUviPaKXYXWAxSt1Eq.igE4aa5a6ABT9JnsNS/QcFAkg5hWrrq', 'ali@gmail.com'),
+	(129, 'koni', '$2y$10$6MRRX93.BiE8u1iI0LPvWeLK0LqFcrFdug9syvlhySPdGwOUjkJW.', 'koni@gmail.com'),
+	(130, 'fi', '$2y$10$uCxyL1eQNnVXyRlbBh4qEef2/Qv0yyjW1W5MuedP9DO.Uh/sYwsoO', 'fi@gmail'),
+	(132, 'admin', '$2y$10$IRfB3kXwNhzHTZ8TpsIKbubpKbxGkXQg3d9uxpUKViu7wntQGr47S', 'admin@gmail.com'),
+	(133, 'awi', '$2y$10$eoHCpdRrhELRF74KAtXmZOe/ew1Stc9XK7nszahEPrLs2oiRrAuWW', 'awi@gmail.com'),
+	(134, 'bi', '$2y$10$qJ721zt67wEmI2eKG4cicegcAqwQ3WaCj2zU7WNBHoRJw6Skjvd06', 'bi@gmail.com'),
+	(135, 'osman', '$2y$10$in3dQubIbzkMEhE.KbZaNOB5t0qrSjscpQgHj98Q56bP4Tm27RCVa', 'osman@gmail.com'),
+	(136, 'luna', '$2y$10$n6Fe.VxxsFGZEekg6N4XqOwR4xl63NyJnbXmHanSOSoNghOR09Um.', 'luna@gmail.com');
 
 -- Dumping structure for table den.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -66,4 +90,3 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
-students
