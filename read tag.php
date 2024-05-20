@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,17 +89,23 @@
         <p id="getUID" hidden></p>
 
         <div id="show_user_data" class="mt-4">
-            <div class="bg-white shadow-lg rounded-lg p-4">
-                <h4 class="text-lg font-bold text-gray-700 mb-4">User Data</h4>
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="text-left font-medium">ID:</div><div>:</div><div class="text-left">--------</div>
-                    <div class="text-left font-medium bg-gray-100 p-1">Name:</div><div class="bg-gray-100 p-1">:</div><div class="text-left bg-gray-100 p-1">--------</div>
-                    <div class="text-left font-medium">Gender:</div><div>:</div><div class="text-left">--------</div>
-                    <div class="text-left font-medium bg-gray-100 p-1">Email:</div><div class="bg-gray-100 p-1">:</div><div class="text-left bg-gray-100 p-1">--------</div>
-                    <div class="text-left font-medium">Mobile Number:</div><div>:</div><div class="text-left">--------</div>
-                </div>
-            </div>
+    <div class="bg-white shadow-lg rounded-lg p-4">
+        <h4 class="text-lg font-bold text-gray-700 mb-4">User Data</h4>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="text-left font-medium">ID:</div>
+            <div class="text-left">--------</div>
+            <div class="text-left font-medium bg-gray-100 p-1">Name:</div>
+            <div class="text-left bg-gray-100 p-1">--------</div>
+            <div class="text-left font-medium">Gender:</div>
+            <div class="text-left">--------</div>
+            <div class="text-left font-medium bg-gray-100 p-1">Email:</div>
+            <div class="text-left bg-gray-100 p-1">--------</div>
+            <div class="text-left font-medium">Mobile Number:</div>
+            <div class="text-left">--------</div>
         </div>
+    </div>
+</div>
+
     </div>
 
     <footer class="bg-green-800 text-white p-4 text-center mt-auto">
